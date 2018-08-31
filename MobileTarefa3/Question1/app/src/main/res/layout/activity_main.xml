@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ohara.question1.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_purple"
+        android:id="@+id/txtNome" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtNome"
+        android:id="@+id/editTxtNome"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexo"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_purple"
+        android:layout_below="@+id/editTxtNome"
+        android:id="@+id/txtSexo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSexo"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/fem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Feminino"/>
+        <RadioButton
+            android:id="@+id/masc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Masculino"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Exibir"
+            android:textColor="@color/buttonColor"
+            android:onClick="exibir"
+            android:id="@+id/btnExibir"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/btnExibir"
+            android:text="Limpar"
+            android:textColor="@color/buttonColor"
+            android:onClick="limpar"
+            android:id="@+id/btnLimpar"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNomeTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonGroup"
+        android:paddingTop="20dp"
+        android:paddingLeft="15dp"
+        android:text="Nome:"
+        android:textStyle="bold"
+        android:textColor="@color/exibirTxtColor"/>
+
+    <TextView
+        android:id="@+id/txtNomeExibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonGroup"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txtNomeTitulo"
+        android:text=" "
+        android:textColor="@color/exibirTxtColor"/>
+
+    <TextView
+        android:id="@+id/txtSexoTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNomeTitulo"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:text="Sexo: "
+        android:textStyle="bold"
+        android:textColor="@color/exibirTxtColor"/>
+
+    <TextView
+        android:id="@+id/txtSexoExibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNomeTitulo"
+        android:layout_alignLeft="@+id/txtNomeExibir"
+        android:paddingTop="10dp"
+        android:text=" "
+        android:textColor="@color/exibirTxtColor"/>
+
+</RelativeLayout>

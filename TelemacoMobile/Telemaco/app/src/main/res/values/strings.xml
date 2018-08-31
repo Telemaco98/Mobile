@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Telemaco</string>
+    <string name="drawer_open">Abrir menu</string>
+    <string name="drawer_close">Fechar menu</string>
+    <string name="item">Item</string>
+
+    <string-array name="menuOptions">
+        <item>Recomendações</item>
+        <item>Minha Lista</item>
+        <item>Test</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nome do Usuário</string>
+    <string name="nav_header_subtitle">user@mail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_logged">Telemaco</string>
+
+    <string name="about_the_tool">
+        A ferramenta Telemaco tem o intuito de prover total controle das séries que o usuário está
+        assistindo, de forma que ele possa gerenciar quais séries está assistindo, assim como quais
+        episódios foram assitidos.
+    </string>
+
+    <string name="student">
+        Estudante de Bacharelado em Tecnologia da Informação na UFRN
+    </string>
+
+    <string name="title_activity_fullscreen">Telemaco</string>
+</resources>

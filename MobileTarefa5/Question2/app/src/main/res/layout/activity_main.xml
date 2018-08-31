@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/frag_increment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:name="com.example.dell.question2.IncrementFragment"
+        tools:layout="@layout/fragment_increment"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/frag_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:name="com.example.dell.question2.LeftCountFragment"
+            tools:layout="@layout/fragment_count_left"
+            />
+
+        <fragment
+            android:id="@+id/frag_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:name="com.example.dell.question2.RightCountFragment"
+            tools:layout="@layout/fragment_count_right"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

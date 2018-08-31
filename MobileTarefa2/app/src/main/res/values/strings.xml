@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Calculadora IMC</string>
+    <string name="semResultado">Aperte o botão calcular!</string>
+</resources>

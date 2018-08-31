@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ddd</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorText">#0F1E3E</color>
+    <color name="background">#ABC2EB</color>
+
+    <color name="grauSuperGrave">#000</color>
+    <color name="grauGrave">#ff3333</color>
+    <color name="grauModerado">#ffa153</color>
+    <color name="grauLeve">#44d9e6</color>
+    <color name="grauIdeal">#99ff99</color>
+</resources>

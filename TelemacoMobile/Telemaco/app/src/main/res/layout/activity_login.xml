@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".activity.LoginActivity"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/icon" />
+
+    <TextView
+        android:id="@+id/txtTile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/colorOrange"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/logo"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/txtTile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:id="@+id/formLinearLayout">
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="300dp"
+            android:layout_height="@dimen/InputSize"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textColorHint="@color/colorHint"
+            android:background="@android:color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            />
+
+        <EditText
+            android:id="@+id/inputPsw"
+            android:layout_width="300dp"
+            android:layout_height="@dimen/InputSize"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:hint="Senha"
+            android:textColorHint="@color/colorHint"
+            android:background="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ainda não possui conta?"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorHint"
+            />
+
+        <TextView
+            android:id="@+id/txtGoSingUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Criar conta agora"
+            android:textAlignment="center"
+            android:textColor="@color/colorGreen"
+            android:onClick="onClick"
+            />
+        
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="300dp"
+            android:layout_height="@dimen/InputSize"
+            android:background="@color/colorGreen"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Confirmar"
+            android:textSize="20sp"
+            android:onClick="onClick"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

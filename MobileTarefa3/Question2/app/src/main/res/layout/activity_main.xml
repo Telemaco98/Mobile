@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/nomeEdit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nome"/>
+
+    <TextView
+        android:id="@+id/idade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nomeEdit"
+        android:text="Idade:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/idadeEdit"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/idade"/>
+
+    <TextView
+        android:id="@+id/nomePai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome"
+        android:layout_marginTop="15dp"
+        android:text="Nome do Pai:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/nomePaiEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nomePai"
+        android:layout_alignBaseline="@+id/nomePai"/>
+
+    <TextView
+        android:id="@+id/nomeMae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomePai"
+        android:layout_marginTop="15dp"
+        android:text="Nome da Mãe:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/nomeMaeEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nomeMae"
+        android:layout_alignBaseline="@+id/nomeMae"/>
+
+    <TextView
+        android:id="@+id/rua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeMae"
+        android:layout_marginTop="15dp"
+        android:text="Rua:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/ruaEdit"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rua"
+        android:layout_alignBaseline="@+id/rua"/>
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ruaEdit"
+        android:layout_alignBaseline="@+id/ruaEdit"
+        android:text="Numero:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/numeroEdit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/numero"
+        android:layout_alignBaseline="@+id/numero"/>
+</RelativeLayout>
